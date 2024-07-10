@@ -109,8 +109,12 @@ ul li {
 }
 
 .intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, footer {
-  width: 40em;
   margin: 0 auto;
+}
+@media (min-width: 816px) {
+  .intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, footer {
+    width: 40em;
+  }
 }
 
 .sidebar .wrapper {
@@ -251,7 +255,7 @@ div.preamble::before {
   transition: border-color 1s ease-in-out, border-width 0.5s ease-in-out, text-shadow 1s ease-out;
 }
 .participation a:hover, .benefits a:hover {
-  border-color: #8a007e;
+  border-color: #FFCD19;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #ee0000;
 }
@@ -357,17 +361,19 @@ div.benefits::after {
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FFCD19;
 }
-.requirements::before {
-  content: "";
-  width: 100%;
-  height: 800px;
-  display: inline-block;
-  position: absolute;
-  background-image: url("images/sand-castle-dark.svg");
-  background-position-x: center;
-  background-position-y: 630px;
-  background-size: 200px 200px;
-  background-repeat: no-repeat;
+@media (min-width: 816px) {
+  .requirements::before {
+    content: "";
+    width: 100%;
+    height: 800px;
+    display: inline-block;
+    position: absolute;
+    background-image: url("images/sand-castle-dark.svg");
+    background-position-x: center;
+    background-position-y: 630px;
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+  }
 }
 .requirements::after {
   content: "";
