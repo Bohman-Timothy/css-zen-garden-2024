@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="76.92334mm"
+   height="59.852535mm"
+   viewBox="0 0 76.923341 59.852536"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="sailboat.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">sailboat</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.5340488"
+     inkscape:cx="51.171775"
+     inkscape:cy="208.92425"
+     inkscape:window-width="1350"
+     inkscape:window-height="1041"
+     inkscape:window-x="129"
+     inkscape:window-y="3"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(11.077972,-57.386726)">
+    <rect
+       style="fill:#757575;fill-opacity:1;stroke-width:0.415913"
+       id="rect27-9"
+       width="2.4853263"
+       height="42.375515"
+       x="9.8388529"
+       y="57.386726" />
+    <rect
+       style="fill:#757575;fill-opacity:1;stroke-width:0.383777"
+       id="rect27-9-9"
+       width="2.4853263"
+       height="36.080219"
+       x="94.441803"
+       y="-46.226933"
+       transform="rotate(90)" />
+    <path
+       style="fill:#7f3434;fill-opacity:1;stroke-width:0.246461"
+       d="m -11.077972,99.301973 15.2649428,17.937287 46.0941442,0 15.650493,-17.851046 z"
+       id="path3"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ff6600;fill-opacity:1;stroke-width:0.326595"
+       d="m 12.318777,69.795961 -0.0067,24.69251 33.872558,0.0052 L 12.31878,57.492795 Z"
+       id="path4"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>sailboat</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

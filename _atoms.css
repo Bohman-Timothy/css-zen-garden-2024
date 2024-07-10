@@ -50,9 +50,21 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   color: #000;
   text-decoration: none;
-  transition: border-color 0.2s ease-in-out;
+  transition: border-color 1s ease-in-out;
+  transition: border-width 0.5s ease-in-out;
 }
 
 a:hover {
-  border-color: #ea2e49;
+  border-color: #8a007e;
+  border-width: 3px;
+}
+
+ul li {
+  list-style: none;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position: left 0.15em;
+  background-image: url("images/starfish.svg");
+  padding-left: 20px;
+  text-indent: 2em hanging;
 }

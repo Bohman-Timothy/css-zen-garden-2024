@@ -15,6 +15,9 @@ html {
 body {
   font-family: $fonts-body;
   color: $text-dark;
-  background-color: $background-color2;
+  background-color: $background-color4;
+  // background: linear-gradient(to bottom, $background-color1, 25%, $background-color2, 50%, $background-color3, 75%, $background-color4);
   margin: 0;
+  // margin: 0 auto;
+  // width: 40em;
 }
