@@ -1,3 +1,23 @@
-.intro {
+@use 'variables' as *;
+@use 'atoms';
+
+.sidebar {
+  background-color: $background-color4;
+  @include atoms.set-font-colors($text-dark, $underline-border-dark);
+  font-size: $sidebar-font-size;
   padding: 1em;
+  h3 {
+    font-size: $heading-sidebar-size;
+  }
+  & .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    max-width: 50em;
+    margin: 0 auto;
+    ul {
+      padding-left: 1em;
+    }
+  }
 }

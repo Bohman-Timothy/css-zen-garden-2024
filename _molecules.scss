@@ -1,15 +1,12 @@
 @use 'variables' as *;
 @use 'atoms';
 
-// use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
-//The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 [role="banner"] {
   display: grid;
   grid-column: 1 / 1;
   justify-items: center;
   align-items: center;
   > h1 {
-    // notice we have to reference the 'atoms' namespace to find our mixins.
     @include atoms.uppercase($text-dark);
     @include atoms.section-heading($sun-color);
     border-radius: 100%;
@@ -21,7 +18,7 @@
     align-items: center;
   }
   h2 {
-    @include atoms.section-heading($heading-background-color0);
+    @include atoms.section-heading($cloud-color);
     border-radius: 50%;
   }
 }
@@ -31,32 +28,9 @@
     width: $text-area-width;
   }
 }
-// .design-selection h3, .design-archives h3, .zen-resources h3 {
-//   text-align: center;
-// }
-// .design-selection ul, .design-archives ul, .zen-resources ul {
-//   margin: 0 auto;
-//   padding-left: 0;
-//   & li {
-//     margin: 0 auto;
-//     padding-left: 0;
-//     text-align: center;
-//   }
-// }
-.sidebar .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 40em;
-  margin: 0 auto;
-  column-gap: 1em;
-  ul {
-    padding-left: 1em;
-  }
-}
 .intro {
-  // background-color: $background-color1;
   background: linear-gradient(to bottom, $background-color1, 90%, #719fbe, $background-color2);
-  @include atoms.set-font-colors($text-dark, $underline-border-dark);
+  @include atoms.set-font-colors($text-dark, $underline-border-dark, $fish-color, $fish-color);
   margin: 0;
   padding: 1em;
 }
@@ -86,16 +60,11 @@ header[role="banner"]::before {
   padding: 1em;
 }
 .summary {
-  // @include atoms.uppercase($text-dark);
   p:last-child {
-    @include atoms.divider($sun-color);
-
+    @include atoms.highlighted-background-and-border();
   }
-  // background-color: #D9F0FF;
 }
 .preamble, .explanation {
-  // background-color: $background-color1;
-  // background: linear-gradient(to bottom, $background-color1, 90%, $background-color2);
   @include atoms.set-font-colors($text-dark, $underline-border-dark);
   h3 {
     @include atoms.section-heading($heading-background-color1);
@@ -104,7 +73,6 @@ header[role="banner"]::before {
 }
 .preamble {
   margin-top: 2em;
-//   background: linear-gradient(to bottom, $background-color1, 75%, #719fbe, $background-color2);
 }
 .preamble p, .participation p, .benefits p, .requirements p, footer a, aside h3, aside li {
   position: relative;
@@ -123,7 +91,6 @@ div.preamble::before {
 }
 .explanation {
   background-color: $background-color2;
-  // background: linear-gradient(to bottom, $background-color2, 75%, #1b5992);
   @include atoms.set-font-colors($text-light, $underline-border-light, $red-text-shadow);
 }
 .participation, .benefits {
@@ -175,7 +142,6 @@ div.benefits::after {
   z-index: 1;
 }
 .requirements {
-  // background-color: $background-color3;
   background: linear-gradient(to bottom, $background-color3, 70%, $background-color3, $background-color4);
   @include atoms.set-font-colors($text-light, $underline-border-light, $sun-color, $sun-color);
   h3 {
@@ -183,11 +149,8 @@ div.benefits::after {
     border-radius: 0.5em;
   }
   [role="contentinfo"] {
-    // background-color: $background-color4;
-    @include atoms.set-font-colors($dark-purple, $dark-purple, $sun-color);
+    @include atoms.set-font-colors($dark-purple, $dark-purple, #ffe482);
     text-shadow: 3px -3px 0.75em #ffffff;
-    // margin-left: -1em;
-    // margin-right: -1em;
     margin-bottom: -1em;
     margin-top: 1em;
     padding: 1em;
@@ -223,17 +186,4 @@ div.benefits::after {
 footer {
   background-color: $background-color4;
   @include atoms.set-font-colors($text-dark, $underline-border-dark);
-}
-.sidebar {
-  background-color: $background-color4;
-  @include atoms.set-font-colors($text-dark, $underline-border-dark);
-  font-size: $sidebar-font-size;
-  padding: 1em;
-  h3 {
-    font-size: $heading-sidebar-size;
-  }
-  // display: flex;
-  @media (min-width: $wide-screen-width) {
-    // background-color: $background-color1;
-  }
 }

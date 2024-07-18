@@ -98,7 +98,7 @@ ul li {
 }
 [role=banner] h2 {
   color: #000;
-  background-color: #fff;
+  background-color: #f2f2f2;
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
@@ -117,18 +117,6 @@ ul li {
   }
 }
 
-.sidebar .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  max-width: 40em;
-  margin: 0 auto;
-  -moz-column-gap: 1em;
-       column-gap: 1em;
-}
-.sidebar .wrapper ul {
-  padding-left: 1em;
-}
-
 .intro {
   background: linear-gradient(to bottom, #D9F0FF, 90%, #719fbe, #427AA1);
   color: #000;
@@ -142,7 +130,7 @@ ul li {
   transition: border-color 1s ease-in-out, border-width 0.5s ease-in-out, text-shadow 1s ease-out;
 }
 .intro a:hover {
-  border-color: #8a007e;
+  border-color: #FF4C00;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FF4C00;
 }
@@ -176,9 +164,12 @@ header[role=banner]::before {
 }
 
 .summary p:last-child {
-  border-top: 2px solid #FFCD19;
-  margin-top: 1em;
-  padding-top: 1em;
+  border: 2px solid #FFCD19;
+  border-radius: 1em;
+  padding: 0.5em;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 205, 25, 0.3764705882);
 }
 
 .preamble, .explanation {
@@ -359,7 +350,7 @@ div.benefits::after {
 .requirements [role=contentinfo] a:hover {
   border-color: #8a007e;
   border-width: 3px;
-  text-shadow: 3px -3px 0.75em #FFCD19;
+  text-shadow: 3px -3px 0.75em #ffe482;
 }
 @media (min-width: 816px) {
   .requirements::before {
@@ -423,8 +414,17 @@ footer a:hover {
 .sidebar h3 {
   font-size: 1.25rem;
 }
-.intro {
-  padding: 1em;
+.sidebar .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
+  max-width: 50em;
+  margin: 0 auto;
+}
+.sidebar .wrapper ul {
+  padding-left: 1em;
 }
 
 * {

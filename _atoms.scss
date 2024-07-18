@@ -18,10 +18,12 @@
   text-transform: uppercase;
   color: $color;
 }
-@mixin divider($color: $accent1) {
-  border-top: 2px solid $color;
-  margin-top: 1em;
-  padding-top: 1em;
+@mixin highlighted-background-and-border($border-color: $sun-color, $background-color: $example-files-background-color) {
+  border: 2px solid $border-color;
+  border-radius: 1em;
+  padding: 0.5em;
+  width: fit-content;
+  background-color: $background-color;
 }
 
 @mixin section-heading($background-color: clear, $font-color: $text-dark) {
@@ -102,7 +104,6 @@ a:hover {
   border-width: 3px;
 }
 ul li {
-  // list-style-image: url("images/starfish.svg");
   list-style: none;
   background-size: 1em;
   background-repeat: no-repeat;
@@ -111,15 +112,3 @@ ul li {
   padding-left: 20px;
   text-indent: 2em hanging;
 }
-// li:before {
-//   content: "";
-//   display: inline-block;
-//   margin-right: 8px;
-//   height: 16px;
-//   width: 16px;
-//   background-image: url("images/starfish.svg");
-// }
-// ul li svg {
-//   width: 20px;
-//   height: 20px;
-// }
