@@ -67,16 +67,31 @@ h1 {
 }
 h2 {
   color: $text-dark;
-  font-size: $heading2-size;
+  font-size: $heading2-size-smallest-screen;
   letter-spacing: 1px;
   line-height: 1em;
 }
 h3 {
-  font-size: $heading3-size;
+  font-size: $heading3-size-smallest-screen;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
+}
+@media (min-width: $small-medium-screen-width) {
+  h2 {
+    color: $text-dark;
+    font-size: $heading2-size;
+    letter-spacing: 1px;
+    line-height: 1em;
+  }
+  h3 {
+    font-size: $heading3-size;
+    font-weight: 200; /* Thin */
+    letter-spacing: 1px;
+    line-height: 1em;
+    padding: 0.5em 0 0.25em 0;
+  }
 }
 h4 {
   font-size: $heading4-size;

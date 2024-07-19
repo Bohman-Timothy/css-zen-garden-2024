@@ -9,6 +9,7 @@
 html {
   background-color: $background-color3;
   font-size: $text-body-size;
+  min-width: $smallest-screen-width;
 }
 body {
   font-family: $fonts-body;
