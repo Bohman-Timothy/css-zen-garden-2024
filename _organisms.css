@@ -1,3 +1,4 @@
+/* Authors: "Sea Depths" CSS Zen Garden project by Timothy Bohman. Former team members with whom the site theme and overall look were chosen: Ella Galbraith (contributed the initial design on which this project is based) and Kevin Kirby. */
 @import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 h1,
 h2,
@@ -17,19 +18,34 @@ h1 {
 
 h2 {
   color: #000;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
   line-height: 1em;
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   font-weight: 200; /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
 }
 
+@media (min-width: 520px) {
+  h2 {
+    color: #000;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1em;
+  }
+  h3 {
+    font-size: 2.25rem;
+    font-weight: 200; /* Thin */
+    letter-spacing: 1px;
+    line-height: 1em;
+    padding: 0.5em 0 0.25em 0;
+  }
+}
 h4 {
   font-size: 1.5rem;
   font-weight: 200; /* Thin */
@@ -59,6 +75,16 @@ a:hover {
   border-width: 3px;
 }
 
+abbr[title] {
+  border-bottom: 2px dotted white;
+  transition: border-bottom 1s ease-in-out;
+  text-decoration: none;
+}
+
+abbr[title]:hover {
+  border-bottom: 4px dotted white;
+}
+
 ul li {
   list-style: none;
   background-size: 1em;
@@ -85,6 +111,14 @@ ul li {
   border-color: #8a007e;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FF4C00;
+}
+.sidebar abbr[title] {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.sidebar abbr[title]:hover {
+  border-bottom: 4px dotted #8a007e;
 }
 .sidebar h3 {
   font-size: 1.25rem;
