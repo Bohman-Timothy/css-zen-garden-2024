@@ -224,7 +224,7 @@ ul li {
 }
 .preamble h3, .explanation h3 {
   color: #000;
-  background-color: #AB9DFF;
+  background-color: rgba(172, 157, 255, 0.8156862745);
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
@@ -289,7 +289,7 @@ ul li {
 }
 .participation h3, .benefits h3 {
   color: #000;
-  background-color: #60FFBC;
+  background-color: rgba(96, 255, 189, 0.8156862745);
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
@@ -361,7 +361,7 @@ div.benefits::after {
 }
 .requirements h3 {
   color: #000;
-  background-color: #FF8383;
+  background-color: rgba(255, 131, 131, 0.8156862745);
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
