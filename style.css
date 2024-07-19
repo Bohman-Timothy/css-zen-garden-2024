@@ -250,7 +250,7 @@ ul li {
 }
 .preamble h3, .explanation h3 {
   color: #000;
-  background-color: rgba(172, 157, 255, 0.8156862745);
+  background-color: rgba(172, 157, 255, 0.8901960784);
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
@@ -331,7 +331,7 @@ ul li {
 }
 .participation h3, .benefits h3 {
   color: #000;
-  background-color: rgba(96, 255, 189, 0.8156862745);
+  background-color: rgba(96, 255, 189, 0.8901960784);
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
