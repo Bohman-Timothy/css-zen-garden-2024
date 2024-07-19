@@ -136,17 +136,18 @@ ul li {
   position: relative;
   z-index: 2;
 }
-.intro p, .intro p footer, .summary p, .summary p footer, .preamble p, .preamble p footer, .explanation p, .explanation p footer, .participation p, .participation p footer, .benefits p, .benefits p footer, .requirements p, .requirements p footer, .intro h3, .intro h3 footer, .summary h3, .summary h3 footer, .preamble h3, .preamble h3 footer, .explanation h3, .explanation h3 footer, .participation h3, .participation h3 footer, .benefits h3, .benefits h3 footer, .requirements h3, .requirements h3 footer {
+
+.intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, footer {
   margin: 0 auto;
 }
 @media (min-width: 520px) {
-  .intro p, .intro p footer, .summary p, .summary p footer, .preamble p, .preamble p footer, .explanation p, .explanation p footer, .participation p, .participation p footer, .benefits p, .benefits p footer, .requirements p, .requirements p footer, .intro h3, .intro h3 footer, .summary h3, .summary h3 footer, .preamble h3, .preamble h3 footer, .explanation h3, .explanation h3 footer, .participation h3, .participation h3 footer, .benefits h3, .benefits h3 footer, .requirements h3, .requirements h3 footer {
+  .intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, footer {
     min-width: -moz-fit-content;
     min-width: fit-content;
   }
 }
 @media (min-width: 816px) {
-  .intro p, .intro p footer, .summary p, .summary p footer, .preamble p, .preamble p footer, .explanation p, .explanation p footer, .participation p, .participation p footer, .benefits p, .benefits p footer, .requirements p, .requirements p footer, .intro h3, .intro h3 footer, .summary h3, .summary h3 footer, .preamble h3, .preamble h3 footer, .explanation h3, .explanation h3 footer, .participation h3, .participation h3 footer, .benefits h3, .benefits h3 footer, .requirements h3, .requirements h3 footer {
+  .intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, footer {
     width: 40em;
     min-width: 0;
   }

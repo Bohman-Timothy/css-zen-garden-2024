@@ -31,15 +31,15 @@
 .intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
   position: relative;
   z-index: 2;
-  &, footer {
-    margin: 0 auto;
-    @media (min-width: $small-medium-screen-width) {
-      min-width: fit-content;
-    }
-    @media (min-width: $wide-screen-width) {
-      width: $text-area-width;
-      min-width: 0;
-    }
+}
+.intro p, .summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p, .intro h3, .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, footer {
+  margin: 0 auto;
+  @media (min-width: $small-medium-screen-width) {
+    min-width: fit-content;
+  }
+  @media (min-width: $wide-screen-width) {
+    width: $text-area-width;
+    min-width: 0;
   }
 }
 .intro {
