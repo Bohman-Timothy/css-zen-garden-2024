@@ -82,7 +82,7 @@ abbr[title] {
 }
 
 abbr[title]:hover {
-  border-bottom: 4px solid white;
+  border-bottom: 4px dotted white;
 }
 
 ul li {
@@ -411,7 +411,7 @@ div.benefits::after {
 }
 .requirements h3 {
   color: #000;
-  background-color: rgba(255, 131, 131, 0.8156862745);
+  background-color: rgba(255, 131, 131, 0.8901960784);
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 0.3em;
