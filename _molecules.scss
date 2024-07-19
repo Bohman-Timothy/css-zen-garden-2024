@@ -110,7 +110,7 @@
 }
 .explanation {
   background-color: $background-color2;
-  @include atoms.set-font-colors($text-light, $underline-border-light, $red-text-shadow);
+  @include atoms.set-font-colors($text-light, $underline-border-light, $red-text-shadow, $sun-color);
 }
 .participation, .benefits {
   background-color: $background-color2;

@@ -48,6 +48,14 @@
     border-width: 3px;
     text-shadow: 3px -3px 0.75em $hover-shadow;
   }
+  abbr[title] {
+    border-bottom: 2px dotted $anchor-underline;
+    transition: border-bottom 0.5s ease-in-out;
+    text-decoration: none;
+  }
+  abbr[title]:hover {
+    border-bottom: 4px dotted $hover-border;
+  }
 }
 
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
@@ -117,6 +125,14 @@ a {
 a:hover {
   border-color: $dark-purple;
   border-width: 3px;
+}
+abbr[title] {
+  border-bottom: 2px dotted white;
+  transition: border-bottom 1s ease-in-out;
+  text-decoration: none;
+}
+abbr[title]:hover {
+  border-bottom: 4px dotted white;
 }
 ul li {
   list-style: none;

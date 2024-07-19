@@ -75,6 +75,16 @@ a:hover {
   border-width: 3px;
 }
 
+abbr[title] {
+  border-bottom: 2px dotted white;
+  transition: border-bottom 1s ease-in-out;
+  text-decoration: none;
+}
+
+abbr[title]:hover {
+  border-bottom: 4px solid white;
+}
+
 ul li {
   list-style: none;
   background-size: 1em;
@@ -170,6 +180,14 @@ ul li {
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FF4C00;
 }
+.intro abbr[title] {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.intro abbr[title]:hover {
+  border-bottom: 4px dotted #FF4C00;
+}
 
 @media (min-width: 520px) {
   section.intro::before {
@@ -222,6 +240,14 @@ ul li {
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FF4C00;
 }
+.preamble abbr[title], .explanation abbr[title] {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.preamble abbr[title]:hover, .explanation abbr[title]:hover {
+  border-bottom: 4px dotted #8a007e;
+}
 .preamble h3, .explanation h3 {
   color: #000;
   background-color: rgba(172, 157, 255, 0.8156862745);
@@ -267,9 +293,17 @@ ul li {
   transition: border-color 1s ease-in-out, border-width 0.5s ease-in-out, text-shadow 1s ease-out;
 }
 .explanation a:hover {
-  border-color: #8a007e;
+  border-color: #FFCD19;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #ee0000;
+}
+.explanation abbr[title] {
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.explanation abbr[title]:hover {
+  border-bottom: 4px dotted #FFCD19;
 }
 
 .participation, .benefits {
@@ -286,6 +320,14 @@ ul li {
   border-color: #FFCD19;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #ee0000;
+}
+.participation abbr[title], .benefits abbr[title] {
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.participation abbr[title]:hover, .benefits abbr[title]:hover {
+  border-bottom: 4px dotted #FFCD19;
 }
 .participation h3, .benefits h3 {
   color: #000;
@@ -359,6 +401,14 @@ div.benefits::after {
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FFCD19;
 }
+.requirements abbr[title] {
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.requirements abbr[title]:hover {
+  border-bottom: 4px dotted #FFCD19;
+}
 .requirements h3 {
   color: #000;
   background-color: rgba(255, 131, 131, 0.8156862745);
@@ -388,6 +438,14 @@ div.benefits::after {
   border-color: #8a007e;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #ffe482;
+}
+.requirements [role=contentinfo] abbr[title] {
+  border-bottom: 2px dotted #8a007e;
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.requirements [role=contentinfo] abbr[title]:hover {
+  border-bottom: 4px dotted #8a007e;
 }
 @media (min-width: 816px) {
   .requirements::before {
@@ -431,6 +489,14 @@ footer a:hover {
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FF4C00;
 }
+footer abbr[title] {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+footer abbr[title]:hover {
+  border-bottom: 4px dotted #8a007e;
+}
 
 .sidebar {
   background-color: #FFD6BA;
@@ -448,6 +514,14 @@ footer a:hover {
   border-color: #8a007e;
   border-width: 3px;
   text-shadow: 3px -3px 0.75em #FF4C00;
+}
+.sidebar abbr[title] {
+  border-bottom: 2px dotted rgba(0, 0, 0, 0.5);
+  transition: border-bottom 0.5s ease-in-out;
+  text-decoration: none;
+}
+.sidebar abbr[title]:hover {
+  border-bottom: 4px dotted #8a007e;
 }
 .sidebar h3 {
   font-size: 1.25rem;
