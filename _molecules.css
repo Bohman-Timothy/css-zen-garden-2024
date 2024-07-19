@@ -1,3 +1,4 @@
+/* Authors: "Sea Depths" CSS Zen Garden project by Timothy Bohman. Former team members with whom the site theme and overall look were chosen: Ella Galbraith (contributed the initial design on which this project is based) and Kevin Kirby. */
 @import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 h1,
 h2,
@@ -207,18 +208,19 @@ header[role=banner]::before {
   z-index: 2;
 }
 
-div.preamble::before {
-  content: "";
-  width: 100%;
-  height: 450px;
-  display: inline-block;
-  position: absolute;
-  background-image: url("images/sailboat.svg");
-  background-position: left 0 top 240px;
-  background-size: 150px 150px;
-  background-repeat: no-repeat;
+@media (min-width: 816px) {
+  div.preamble::before {
+    content: "";
+    width: 100%;
+    height: 450px;
+    display: inline-block;
+    position: absolute;
+    background-image: url("images/sailboat.svg");
+    background-position: left 0 top 240px;
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+  }
 }
-
 .explanation {
   background-color: #427AA1;
   color: #fff;
